@@ -191,6 +191,7 @@ body {
 [class*=__contain-big] {
   max-width: 105rem;
   margin: 0 auto;
+  padding: 0 0.9375rem;
 }
 
 [class*=__container] {
@@ -1639,14 +1640,6 @@ body {
 }
 
 @media (min-width: 71.25em) {
-  [class*=__contain-big] {
-    padding-left: 0.9375rem;
-  }
-
-  [class*=__contain-big] {
-    padding-right: 0.9375rem;
-  }
-
   .button::after {
     width: 3.1875rem;
   }
@@ -1938,14 +1931,6 @@ body {
 }
 
 @media (max-width: 20em) {
-  [class*=__contain-big] {
-    padding-left: 0.9375rem;
-  }
-
-  [class*=__contain-big] {
-    padding-right: 0.9375rem;
-  }
-
   .button::after {
     width: 2.5rem;
   }
@@ -2474,30 +2459,6 @@ body {
 }
 
 @media (min-width: 20em) and (max-width: 71.25em) {
-@supports (padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__contain-big] {
-      padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__contain-big] {
-      padding-left: calc(0.9375rem + 0 * (100vw - 20rem) / 51.25);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__contain-big] {
-      padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__contain-big] {
-      padding-right: calc(0.9375rem + 0 * (100vw - 20rem) / 51.25);
-    }
-}
-
 @supports (width: clamp( 2.5rem , 2.2317073171rem  +  1.3414634146vw , 3.1875rem )) {
     .button::after {
       width: clamp( 2.5rem , 2.2317073171rem  +  1.3414634146vw , 3.1875rem );
